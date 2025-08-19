@@ -5,7 +5,7 @@ Want to get to coding world without experience? 💻🤷‍♂️<br>No problem!
 > [!NOTE]
 > This page is still incomplete, there will be work in the future for complete python, js, and other!.
 
-<br>
+
 ### 🐍 Python
 ---
 Get started with simple and easy! ⌛😎
