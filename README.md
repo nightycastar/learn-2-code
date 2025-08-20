@@ -31,7 +31,7 @@ Please be patient for another lesson to be included. This repo just be updated o
 <br><br>
 ### Contributing & Issue Report
 I'm not an expert of coding, feel free to contributing! ❤️<br>
-Share your experience to new generation for the better!
+Share your experience to new generation for the better! ✨
 <br><br>
 Finding syntax bugs, typos, or even wrong grammar?<br>
 [Create Issue](ISSUE.md) and report it!
