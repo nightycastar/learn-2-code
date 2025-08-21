@@ -9,8 +9,8 @@ Please be patient for another lesson to be included. This repo just be updated o
 
 - [ ] Python (W.I.P.)
   - [X] STDOUT
-  - [ ] Variables
-  - [ ] STDIN
+  - [X] Variables
+  - [X] STDIN
   - [ ] Condition
   - [ ] Looping
   - [ ] Error Handling
@@ -21,7 +21,7 @@ Please be patient for another lesson to be included. This repo just be updated o
 - [ ] Other.. (To be added later...)
 <br><br>
 > [!NOTE]
-> This page is still incomplete, there will be more work in the future for complete python, js, and other!.
+> This page is still incomplete, there will be more work in the future for complete python, js, and other!.<br>
 > Knowing I'm not an expert in coding, feel free to contributing!
 
 
@@ -34,4 +34,4 @@ I'm not an expert of coding, feel free to contributing! ❤️<br>
 Share your experience to new generation for the better! ✨
 <br><br>
 Finding syntax bugs, typos, or even wrong grammar?<br>
-[Create Issue](ISSUE.md) and report it!
+[Create Issue](ISSUE.md) and report it! 🚨

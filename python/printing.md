@@ -1,7 +1,7 @@
 # PRINTING / STDOUT
 > *[See file](printing.py)*
 
-Printing is the way python displays output to CLI where user can read. `print()` is the function to display output value in Python. Python `print()` function is bit different with C `printf()` function. To do formatted-print in Python, you'll need to use concatenation-format, *f-string*, `.format()`, or *%-C-based format* method instead.
+Printing is the way Python displays output to CLI where user can read. `print()` is the function to display output value in Python. Python `print()` function is bit different with C `printf()` function. To do formatted-print in Python, you'll need to use concatenation-format, *f-string*, `.format()`, or *%-C-based format* method instead.
 <br><br>
 ### Print Arguments
 ---
@@ -22,7 +22,7 @@ print('Hello, World!')
 ```py
 print('Hell' 'o')
 # Hello
-# This works like how string behaves as char list
+# This connects the string because string behaves like char list, so it's basically list of a single char and connected to make string
 
 print('Good' + 'bye')
 # Goodbye
