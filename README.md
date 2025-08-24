@@ -10,7 +10,7 @@ Please be patient for another lesson to be included. This repo just be updated o
 - [ ] Python (W.I.P.)
   - [X] STDOUT
   - [X] Variables
-  - [ ] STDIN
+  - [X] STDIN
   - [ ] Condition
   - [ ] Looping
   - [ ] Error Handling
