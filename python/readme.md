@@ -4,7 +4,7 @@ It's simple, easy, and understandable for beginners. Python has syntax that is s
 ### Where to code? 👨‍💻
 ---
 You can install the interpreter at [Python's official website](https://python.org), then run your script by typing this in the CLI:
-```
+```sh
 python your_file.py
 ```
 Alternatively if you don't have the interpreter, you can try to code Python on [Google Colab's website](https://colab.google). GColab has some pre-installed libraries such as `numpy` and `matplotlib`, but lacks of file operation method.
@@ -14,3 +14,4 @@ Alternatively if you don't have the interpreter, you can try to code Python on [
 You can start here 👇
 - [Printing/stdout](printing.md)
 - [Variables](vars.md)
+- [Input/stdin](inputting.md)

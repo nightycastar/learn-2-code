@@ -1,7 +1,7 @@
 # PRINTING / STDOUT
-> *[See file](printing.py)*
+> [*See file*](printing.py)
 
-Printing is the way Python displays output to CLI where user can read. `print()` is the function to display output value in Python. Python `print()` function is bit different with C `printf()` function. To do formatted-print in Python, you'll need to use concatenation-format, *f-string*, `.format()`, or *%-C-based format* method instead.
+Printing is the way Python displays output to CLI where user can read. `print()` is the function to display output value in Python. Python `print()` function is bit different than C `printf()` function. To do formatted-print in Python, you'll need to use concatenation-format, *f-string*, `.format()`, or *C-based % format* method instead.
 <br><br>
 ### Print Arguments
 ---
@@ -11,7 +11,7 @@ Printing is the way Python displays output to CLI where user can read. `print()`
 - `flush`: Prints as it can without waiting code to finish executing. Default to `False`.
 - `file`: Output file for this print result written in. To write output to file, there must be an opened file with write permission. Default to `sys.stdout` (CLI).
 <br><br>
-### Printing Example
+### Example
 ---
 > Basic String Printing
 ```py

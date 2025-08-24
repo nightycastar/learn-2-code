@@ -1,7 +1,7 @@
 # VARIABLES
-> *[See file](variables.py)*
+> [*See file*](variables.py)
 
-Variable is an object that stores value, and then it can be used later for referencing or just a value storage. In a simple terms, variable is a container that is used to stores item which can be accessed for later usage. To define a variable in Python, just type variable name at first (*must follow [variable writing rules](#variable-writing-rules) below*) and followed by equal (`=`) sign after name and then value after equal.
+Variable is an object that stores value, and then it can be used later for referencing or just a value storage. In a simple terms, variable is a container that is used to stores item which can be accessed for later usage. To define a variable in Python, just type variable name at first (*must follow [variable writing rules](#variable-writing-rules) below*) and followed by equal (`=`) sign after name and then value after equal. Variables can be rewritten and do operation. To rewrite, simply declare the variable back. While to do operation, can be declared back with some function, mathematical, or other operations, [*see here*](#operations).
 
 ### Variable Writing Rules
 ---
@@ -12,8 +12,8 @@ In writing variable, there are several condition must met the criteria (*Violati
 
 There are also few common tips to write a variable (*Violating doesn't cause error*):
 - The name must be *'meaningful'*, even though it's not really that important.
-- When concatenating words for the name, it's very recommended to use `camelCase` which common technique by most Python programmers.
-- Using type hinting for easier to understand the code while reading, even if that doesn't really affect the program. Type hinting doesn't really stricten the syntax, you can freely violate the hinting without any error being occured.
+- When concatenating words for the name, it's very recommended to use `camelCase` which common technique by most programmers.
+- Using type annotation / hinting for easier to understand the code while reading, even if that doesn't really affect the program. Type hinting doesn't really stricten the syntax, you can freely violate the hinting without any error being occured.
 
 ### Variable Types
 ---
@@ -27,7 +27,84 @@ There are main known types:
 - `dict`: Dictionary. Like a `list` but it's set of key and value. Written inside curly brace (`{...}`) with format of `'KEY': VALUE`. Key must be string, while value is in its type form. Accessing value can be using index or key index.
 - `None`: None, null. Null value (self-explanatory).
 
-### In Code Explanation
+### Operations
+---
+Operation is the way to modify value. Operations have order hierarchy, like `+` is done after `*` regardless of its position like how math works. And of course, this hierarchy can be manipulated by using brackets `()` to make it priority to evaluate first. There are various operations in Python:
+> Mathematical Operations
+
+These operations are number related. The result will also be number.
+| Operator | Function | Example |
+|-|-|-|
+| `+` | Increases value. | `5 + 3` = `8` |
+| `-` | Decreases value. | `5 - 3` = `2` |
+| `*` | Multiply value. | `5 * 3` = `15` |
+| `/` | Divides value. | `5 / 3` = `1.66..7` |
+| `//` | Divides value with return as integer. | `5 // 3` = `1` |
+| `**` | Raise to power the value. | `5 ** 3` = `125` |
+| `%` | Returns remainder of division (for the return decimal, there will be remainder, return `0` if division returns integer) | `5 % 3` = `2` |
+| `-x` | Negates value | `-5` |
+> Comparison Operations
+
+These operations check for condition. If met, it will result in `True`, otherwise `False`.
+| Operator | Function | Example |
+|-|-|-|
+| `==` | Checks for equal value. | `5 == 3` = `False` |
+| `!=` | Checks for different or not equal value. | `5 != 3` = `True` |
+| `>` | Check if value is greater (from left). | `5 > 3` = `True` |
+| `<` | Check if value is lesser (from left). | `5 < 3` = `False` |
+| `>=` | Check if value is greater or equal (from left). | `5 >= 3` = `True` |
+| `<=` | Check if value is lesser or equal (from left). | `5 <= 3` = `False` |
+> Logic Operations
+
+These operations used to change the condition. [*See 'Logic Gates'*](https://en.wikipedia.org/wiki/Logic_gate)
+| Operator | Function | Example |
+|-|-|-|
+| `and` | Checks for both value are `True`. | `5 < 3 and 5 > 3` = `False` |
+| `or` | Checks for at least one of value is `True`. | `5 < 3 or 5 > 3` = `True` |
+| `not` | Inverse condition. Must be placed in front of condition. | `not 5 < 3` = `True` |
+> Bitwise Operations
+
+These operations work by comparing the binary of value and returns as non-binary number, based on *'Logic Gates'*. For begginers, these operations is kinda difficult to understand, so it's ***not recommended*** to learn, even that these operations very rarely to be used by common users.
+| Operator | Function | Example |
+|-|-|-|
+| `&` | Checks for both binary value are `True` (AND). | `5 & 3` = `1` |
+| `\|` | Checks for both binary value are at least one is `True` (OR). | `5 \| 3` = `7` |
+| `^` | Checks for single binary value is `True` (XOR). | `5 & 3` = `1` |
+| `~` | Inverse binary value (NOT). | `~5` = `-6` |
+| `<<` | Left shift binary value. | `2 << 1` = `4` |
+| `>>` | Right shift binary value. | `4 >> 1` = `2` |
+> Assignment Operations
+
+These operations are used to declare or re-declare value to variable with some self-operation.
+| Operator | Function | Example |
+|-|-|-|
+| `=` | Declares value to variable. | `var = 67` |
+| `+=` | Re-declares to self-value added by other value. | `var += 3` = `70` |
+| `-=` | Re-declares to self-value subtracted by other value. | `var -= 20` = `50` |
+| `*=` | Re-declares to self-value multiplied by other value. | `var *= 2` = `100` |
+| `-=` | Re-declares to self-value divided by other value. | `var /= 20` = `5` |
+| `//=` | Re-declares to self-value floor-divided by other value. | `var //= 2` = `2` |
+| `**=` | Re-declares to self-value raised to power of other value. | `var **= 3` = `8` |
+| `%=` | Re-declares to remainder of self-value divided by other value. | `var %= 3` = `2` |
+> Attributes Operations
+
+These operations check for value attributes.
+| Operator | Function | Example |
+|-|-|-|
+| `is` | Checks for object identity is equal to this. | `var1 is var2` |
+| `is not` | Inverted `is`. | `var1 is not var2` |
+| `in` | Checks for object is part of this. | `var1 in var2` |
+| `not in` | Inverted `in`. | `var1 not in var2` |
+
+> Other Operations
+
+| Operator | Function | Example |
+|-|-|-|
+| `!x` | Set value to not `x`. Usually for boolean switch like `not`. | `!True` = `False` |
+| `:=` | Assign value as input while used in condition evauation. Called as 'walrus operator'. | `if 'Cory' in (var_input := input('Your name: ')): ...` |
+| `func()` | Assign return value to variable if it has. Var types such as `int`, `str`, and other can also be used as function to converts value to corresponding types. | `int(9.37)` = `9` |
+
+### Examples
 ---
 > String
 - Defining
@@ -51,6 +128,7 @@ print(subject[3:13:2])
 > Integer
 ```py
 age = 23
+tax = 2300 * 0.12
 corporalProfit = -65_000
 promo_code = int("277936")
 ```
@@ -175,5 +253,5 @@ text : str = "Hello, World!"
 # Just add `: <type>` and done
 
 number_or_not : int = "This doesn't error tho"
-# it doesn't bother with code
+# It doesn't bother with violation
 ```
